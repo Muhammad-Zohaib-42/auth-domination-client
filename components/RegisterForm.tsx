@@ -42,7 +42,7 @@ const RegisterForm = () => {
         </label>
         <input
           {...register("name", { required: "Name is required" })}
-          className={`border ${errors.name ? "border-red-300 focus:border-red-500" : "border-slate-200 dark:border-slate-800 focus:border-indigo-300 dark:focus:border-indigo-700"} rounded px-3 py-1 outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:dark:bg-slate-950 disabled:text-slate-600 disabled:dark:text-slate-300 transition-all`}
+          className={`border ${errors.name ? "border-red-300 focus:border-red-500" : "border-slate-300 dark:border-slate-800 focus:border-indigo-500 dark:focus:border-indigo-700"} rounded px-3 py-1 outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:dark:bg-slate-950 disabled:text-slate-600 disabled:dark:text-slate-300 transition-all`}
           type="text"
           id="name"
           disabled={isSubmitting}
@@ -70,7 +70,7 @@ const RegisterForm = () => {
                 "Username must start with a letter and contain only letters, numbers, and underscores",
             },
           })}
-          className={`border ${errors.username ? "border-red-300 focus:border-red-500" : "border-slate-200 dark:border-slate-800 focus:border-indigo-300 dark:focus:border-indigo-700"} rounded px-3 py-1 outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:dark:bg-slate-950 disabled:text-slate-600 disabled:dark:text-slate-300 transition-all`}
+          className={`border ${errors.username ? "border-red-300 focus:border-red-500" : "border-slate-300 dark:border-slate-800 focus:border-indigo-500 dark:focus:border-indigo-700"} rounded px-3 py-1 outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:dark:bg-slate-950 disabled:text-slate-600 disabled:dark:text-slate-300 transition-all`}
           type="text"
           id="username"
           disabled={isSubmitting}
@@ -89,7 +89,7 @@ const RegisterForm = () => {
               message: "Please enter a valid email",
             },
           })}
-          className={`border ${errors.email ? "border-red-300 focus:border-red-500" : "border-slate-200 dark:border-slate-800 focus:border-indigo-300 dark:focus:border-indigo-700"} rounded px-3 py-1 outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:dark:bg-slate-950 disabled:text-slate-600 disabled:dark:text-slate-300 transition-all`}
+          className={`border ${errors.email ? "border-red-300 focus:border-red-500" : "border-slate-300 dark:border-slate-800 focus:border-indigo-500 dark:focus:border-indigo-700"} rounded px-3 py-1 outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:dark:bg-slate-950 disabled:text-slate-600 disabled:dark:text-slate-300 transition-all`}
           type="email"
           id="email"
           disabled={isSubmitting}
@@ -113,7 +113,7 @@ const RegisterForm = () => {
                 message: "Password cannot exceed 50 characters",
               },
             })}
-            className={`w-full border ${errors.password ? "border-red-300 focus:border-red-500" : "border-slate-200 dark:border-slate-800 focus:border-indigo-300 dark:focus:border-indigo-700"} rounded px-3 py-1 outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:dark:bg-slate-950 disabled:text-slate-600 disabled:dark:text-slate-300 transition-all`}
+            className={`w-full border ${errors.password ? "border-red-300 focus:border-red-500" : "border-slate-300 dark:border-slate-800 focus:border-indigo-500 dark:focus:border-indigo-700"} rounded px-3 py-1 outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:dark:bg-slate-950 disabled:text-slate-600 disabled:dark:text-slate-300 transition-all`}
             type={isPasswordVisible ? "text" : "password"}
             id="password"
             disabled={isSubmitting}

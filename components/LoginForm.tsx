@@ -46,7 +46,7 @@ const LoginForm = () => {
               message: "Please enter a valid email",
             },
           })}
-          className={`border ${errors.email ? "border-red-300 focus:border-red-500" : "border-slate-200 dark:border-slate-800 focus:border-indigo-300 dark:focus:border-indigo-700"} rounded px-3 py-1 outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:dark:bg-slate-950 disabled:text-slate-600 disabled:dark:text-slate-300 transition-all`}
+          className={`border ${errors.email ? "border-red-300 focus:border-red-500" : "border-slate-300 dark:border-slate-800 focus:border-indigo-500 dark:focus:border-indigo-700"} rounded px-3 py-1 outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:dark:bg-slate-950 disabled:text-slate-600 disabled:dark:text-slate-300 transition-all`}
           type="email"
           id="email"
           disabled={isSubmitting}
@@ -58,7 +58,7 @@ const LoginForm = () => {
           <label className="text-slate-500 dark:text-slate-400 grow" htmlFor="password">
             Password
           </label>
-          <button disabled={isSubmitting} type="button" className="text-indigo-500 text-sm cursor-pointer outline-none focus:text-indigo-700 hover:text-indigo-700 focus:underline disabled:cursor-not-allowed focus:font-medium">Forgot password?</button>
+          <button disabled={isSubmitting} type="button" className="text-indigo-500 text-sm cursor-pointer outline-none focus:text-indigo-700 hover:text-indigo-700 focus:underline disabled:cursor-not-allowed disabled:hover:text-indigo-500 focus:font-medium">Forgot password?</button>
         </div>
         <div className="relative">
           <input
@@ -73,7 +73,7 @@ const LoginForm = () => {
                 message: "Password cannot exceed 50 characters",
               },
             })}
-            className={`w-full border ${errors.password ? "border-red-300 focus:border-red-500" : "border-slate-200 dark:border-slate-800 focus:border-indigo-300 dark:focus:border-indigo-700"} rounded px-3 py-1 outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:dark:bg-slate-950 disabled:text-slate-600 disabled:dark:text-slate-300 transition-all`}
+            className={`w-full border ${errors.password ? "border-red-300 focus:border-red-500" : "border-slate-300 dark:border-slate-800 focus:border-indigo-500 dark:focus:border-indigo-700"} rounded px-3 py-1 outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:dark:bg-slate-950 disabled:text-slate-600 disabled:dark:text-slate-300 transition-all`}
             type={isPasswordVisible ? "text" : "password"}
             id="password"
             disabled={isSubmitting}
@@ -93,7 +93,7 @@ const LoginForm = () => {
         Login
       </button>
       <p className="text-sm text-slate-600 dark:text-slate-400">
-        Don&apost have an account !{" "}
+        Don&apos;t have an account !{" "}
         <Link
           className="text-indigo-600 dark:text-indigo-500 hover:font-medium hover:underline outline-none focus:font-medium focus:underline"
           href="/register"
