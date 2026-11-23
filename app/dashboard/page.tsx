@@ -1,4 +1,4 @@
-import { BriefcaseBusiness, Camera } from "lucide-react"
+import { BriefcaseBusiness } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import defaultAvatar from "../../assets/download.png"
